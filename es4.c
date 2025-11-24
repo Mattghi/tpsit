@@ -11,7 +11,7 @@ int main(){
 printf("Hey sono il main!\n");
 pthread_t ptid;
 pthread_create(&ptid, NULL, codice_thread, NULL);
-sleep(2);
+sleep(2); //oppure pthread_join(ptid,NULL)
 return 0;
 
 }
