@@ -1,3 +1,5 @@
+//prende in input un intero che rappresenta un numero di passi, viene passato dal main come puntatore. dopo quel numero di passi il thread termina, e viene aspttato con una join.
+
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
