@@ -11,7 +11,7 @@ int main(){
 printf("Hey sono il main!\n");
 pthread_t ptid;
 pthread_create(&ptid, NULL, codice_thread, NULL);
-sleep(2);
+sleep(2); //oppure pthread_join(ptid,NULL)   senza un attesa questo va nel return 0 e non essendoci piu il processo non ci sono piu neanche gli altri thread.
 return 0;
 
 }
