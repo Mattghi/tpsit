@@ -9,12 +9,12 @@ void *codice_thread(void * arg){
     pid_t pid = getpid();
     printf("Pid del processo: %d\n", pid);
     printf("tid del thread: %lu\n", pthread_self());
-    return NULL;
+    
 }
 
 int main(){
-    pid_t pid = getpid();
-printf("Pid del processo: : %d\n tid del thread principale: %lu\n",pid, pthread_self());
+pid_t pid = getpid();
+printf("Pid del processo: : %d\n tid del thread principale: %li\n",pid, pthread_self());
 pthread_t ptid;
 pthread_create(&ptid, NULL, codice_thread, NULL);
 printf("tid del nuovo thread: %lu\n", ptid);
