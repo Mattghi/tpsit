@@ -1,3 +1,5 @@
+//il thread funziona all'infinito perche' il processo rimane in attesa dello scanf. inserito un numero, il thread termina.
+
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
